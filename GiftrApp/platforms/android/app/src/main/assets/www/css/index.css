@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Molle';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Molle'),
+    local('Molle-Regular'),
+    url(./fonts/Molle-Regular.ttf) format('truetype');
+}
+body{
+	background: linear-gradient( to right, #0F0605, #682323);
+}
+h4, legend{
+	font-family: Molle, 'Comic Sans MS', cursive;
+	text-shadow: 1px 1px 2px black;
+}
+h4, a.link, legend, label{
+	 color: #490505;
+}
+.overlay{
+    display: none;
+	color: #F4D5B5;
+	padding-top: 40%;
+	text-align: center;
+}
+#diff{
+    padding-left: 2rem;
+}
+
+form{
+    margin-top: 4rem;
+	border: 1px solid black;
+	background-color: #F4D5B5;
+	padding-bottom: 1rem;
+	padding-top: 0.5rem;
+}
+fieldset{
+    border: 0;
+    text-align: center;
+}
+input{
+     color: #F4D5B5 !important; 
+     background-color: #490505;
+	 text-align: center;
+	 border-radius: 10px;
+}
+input::placeholder{
+    color: #565453;
+}
+#people .list-item, #gift .list-item{
+	border: 1px solid black;
+	margin-bottom: 8px;
+	border-radius: 10px;
+	box-shadow: -2px 2px 7px #F2DCC9;
+	color: #F2DCC9;
+	
+}
+.bar-half.top{
+	background-color: #F4D5B5;
+}
+#right, #giftOwner {
+	color: #F2DCC9;
+}
+.giftIdea, .card p{
+    text-align: center;
+}
+.giftLocation{
+    font-weight: bold !important;
+}
+#del{
+    margin: 10rem 6rem 0 0;
+}
+.giftPrice{
+    position: relative;
+    bottom: 1.5rem;
+}
+#dob{
+    font-size: 1rem;
+}
+.contact, .giftUrl a{
+    color: #F4D5B5;
+    text-decoration: underline;
+}
+.card p{
+    padding: 0;
+}
+.card{
+	padding-top: 2rem;
+	background-color: #664242;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.fab{
+  display:none;
+  border-radius: 50%;
+  background-color: #F4D5B5;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 1rem;
+  right: 2.2rem;
+  box-shadow: 2px 2px 7px black;
+  z-index: 200;
+}
+.fab .fabAdd{
+  color: #330405;
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-bottom: 1.8px;
+  /*padding: auto;*/
+  line-height: 75px;
+  font-size: 58px;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+.passed{
+	color: grey;
+}
+
+.passed::after{
+	content:', date passed.'
+}
+.opaq{
+	opacity: 0;
+}

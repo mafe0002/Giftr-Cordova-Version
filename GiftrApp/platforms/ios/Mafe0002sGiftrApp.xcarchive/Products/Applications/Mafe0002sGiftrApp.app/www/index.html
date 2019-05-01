@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;script-src *;img-src * 'self' * data: content:; connect-src * blob: cdvphotolibrary:;">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+	<link href="css/tinyshell.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/platform.css">
+
+	<title>Giftr App</title>
+
+</head>
+
+<body>
+	<main>
+		<div class="overlay">
+
+				<section class="messages">
+					<h3 id="info"></h3>
+				</section>
+				
+			</div>
+
+		<div class="page active" id="people">
+
+			<nav class="bar-half top" id="nav">
+				<a href="#" class="link left"></a>
+				<h4 id="diff">People</h4>
+				<a href="#addItems" class="link right icon add" id="addPple">ADD</a>
+			</nav>
+
+			<section class="content">
+
+				<ul class="list-view">
+				</ul>
+
+			</section>
+
+		</div>
+
+		<div class="page" id="addPeople">
+
+			<nav class="bar-half top" id="nav">
+				<a href="#list" class="link left icon cancel" id="cancel"></a>
+				<h4>Add People</h4>
+				<a href="#list" class="link right icon save" id="save"></a>
+			</nav>
+
+			<form id="peopleForm">
+
+				<span class="field">
+           
+                           <fieldset>
+         
+                               <legend>Add Person</legend>
+           
+                               <P class="form-row">
+                                    <label for="nm">Name</label>
+                                    <input id="nm" placeholder="name" type="text" autofocus required>
+                               </P>
+           
+                                <P class="form-row">
+                                    <label for="dob">Date of Birth</label>
+                                    <input id="dob" type="date" autofocus>
+           
+                                </P>
+                                
+                           </fieldset>
+               
+                        </span>
+
+			</form>
+
+		</div>
+
+		<div class="page" id="gift">
+
+			<nav class="bar-half top" id="nav">
+				<a href="#" class="link left icon arrow_left" id="fromGiftPage"></a>
+				<h4>Gift</h4>
+				<a href="#addItems" class="link right icon add" id="addGift"></a>
+			</nav>
+
+			<section class="content">
+                 
+                <p id="giftOwner"></p>
+                
+				<ul class="list-view">
+				</ul>
+
+			</section>
+
+		</div>
+
+		<div class="page" id="addIdea">
+
+			<nav class="bar-half top" id="nav">
+				<a href="#" class="link left icon arrow_left" id="fromAddGift"></a>
+				<h4>Add Gift</h4>
+				<a href="#addItems" class="link right icon save" id="saveGift" ></a>
+			</nav>
+
+
+			<form id="giftForm">
+
+				<span class="field">
+           
+                           <fieldset>
+         
+                               <legend>Add Gift Idea</legend>
+           
+                               <P class="form-row">
+                                    <label for="idea">Gift Name</label>
+                                    <input id="idea" placeholder="gift name" type="text" autofocus required>
+                               </P>
+           
+                                <P class="form-row">
+                                    <label for="location">Store</label>
+                                    <input id="location" placeholder="where to buy gift" type="text" autofocus>
+           
+                                </P>
+                                
+                                <P class="form-row">
+                                    <label for="online">Url</label>
+                                    <input id="online" placeholder="url" type="url" pattern="http?://.+" autofocus>
+           
+                                </P>
+                                
+                                <P class="form-row">
+                                    <label for="price">Price</label>
+                                    <input id="price" placeholder="price" type="text" autofocus required >
+           
+                                </P>
+                                
+                           </fieldset>
+               
+                        </span>
+
+			</form>
+
+
+		</div>
+
+	</main>
+
+	<footer>
+
+		<div class="fab">
+			<p class="fabAdd" id="fabAdd">+</p>
+		</div>
+
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="js/tinyshell.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="js/platform.js"></script>
+	<script src="js/api.js"></script>
+
+	<template id="temp1">
+                 <li class="list-item">
+           	         <p class="contact"></p>
+            	     <span class="action-right icon arrow_right" id="right">
+            	     </span>
+            	     <span class="action-left icon delete" id="left">
+            	     </span>
+            	     <p class="birthday"></p>
+                 </li>
+            </template>
+
+	<template id="temp2">
+            	  <li class="list-item">
+                     <div class="card">
+            	     <p class="giftIdea"></p>
+            	     <p class="giftLocation"></p>
+            	     <p class="giftUrl"><a href=""></a></p>
+            	     <p class="giftPrice"></p>
+            	     <span class="action-right icon delete" id="del"></span>
+            	     </div>
+                 </li>
+            </template>
+
+</body>
+</html>

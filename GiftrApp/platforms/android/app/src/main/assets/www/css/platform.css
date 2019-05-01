@@ -1,0 +1,9 @@
+.fab{
+	display: block;
+}
+#addPple, #addGift{
+	display: none;
+}
+#diff, #gift h4{
+	padding-right: 38%
+}

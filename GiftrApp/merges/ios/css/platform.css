@@ -1,0 +1,25 @@
+nav{
+	display: block;
+}
+.reposition{
+    margin: 10rem 5.5rem 2.5rem 0 !important;
+}
+
+#cancel::before{
+	content: "CANCEL";
+}
+#save::before{
+	content: "SAVE";
+}
+#fromGiftPage::before{
+	content: "BACK";
+}
+#fromAddGift::before{
+	content: "BACK";
+}
+#addGift::before{
+	content: "ADD";
+}
+#saveGift::before{
+	content: "SAVE";
+}
